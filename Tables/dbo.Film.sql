@@ -13,5 +13,5 @@ ALTER TABLE [dbo].[Film] ADD CONSTRAINT [PK_Film] PRIMARY KEY CLUSTERED  ([FilmI
 GO
 ALTER TABLE [dbo].[Film] ADD CONSTRAINT [FK_Film_LeadActor] FOREIGN KEY ([LeadActorID]) REFERENCES [dbo].[LeadActor] ([LeadActorID])
 GO
-ALTER TABLE [dbo].[Film] ADD CONSTRAINT [FK_Film_location1] FOREIGN KEY ([FilmLocationID]) REFERENCES [dbo].[FilmLocation] ([FilmLocationID])
+ALTER TABLE [dbo].[Film] ADD CONSTRAINT [FK_Film_location1] FOREIGN KEY ([FilmLocationID]) REFERENCES [dbo].[location] ([FilmLocationID])
 GO
